@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/album/"
+    />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheets/indexstyle.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo.svg"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            TechiSpot
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-md-flex justify-content-md-end me-md-5"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Our Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./About us.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="./sign-in.html">Sign In</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="py-5 text-center container cover-img">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light display-3">Browse our Courses</h1>
+            <p class="lead text-muted">
+              Keep your skills up-to-date with access to hundreds of the latest
+              courses across Data Science, Machine Learning, DevOps, Cyber
+              Security, Full Stack Development, and People and Process
+              Certifications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <h3 class="display-5 pb-5 mb-3">Choose your Favourite Course</h3>
+          <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm" style="width: 18rem">
+                <img
+                  src="./images/Courses/Javascript course.jpg"
+                  class="card-img-top"
+                  alt="JavaScript Course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">JavaScript Full Course</h5>
+                  <p class="card-text">
+                    Our Comprehensive JavaScript course is designed to give you
+                    the skills you need to become a full-stack JavaScript
+                    developer. Join our Program by clicking below!
+                  </p>
+                  <a href="#" class="btn btn-warning">Join Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="width: 18rem; height: auto">
+                <img
+                  src="./images/Courses/css course.png"
+                  class="card-img-top"
+                  alt="Css Course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CSS Full Course</h5>
+                  <p class="card-text">
+                    This full course on CSS will give you a complete
+                    understanding of CSS, from the basics of styling text and
+                    working with color to advanced concepts such as transitions
+                    and flexbox layouts.Join our Program by clicking below!
+                  </p>
+                  <a href="#" class="btn btn-warning">Join Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div
+            id="carouselMultiItemExample"
+            class="carousel slide carousel-dark text-center"
+            data-mdb-ride="carousel"
+          >
+            <!-- Controls -->
+            <div class="d-flex justify-content-center mb-4">
+              <button
+                class="carousel-control-prev position-relative"
+                type="button"
+                data-mdb-target="#carouselMultiItemExample"
+                data-mdb-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next position-relative"
+                type="button"
+                data-mdb-target="#carouselMultiItemExample"
+                data-mdb-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Inner -->
+            <div class="carousel-inner py-4">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="card">
+                        <img
+                          src="./images/Courses/Javascript course.jpg"
+                          class="card-img-top"
+                          alt="Javascript course"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">JavaScript Full Course</h5>
+                          <p class="card-text">
+                            Our Comprehensive JavaScript course is designed to
+                            give you the skills you need to become a full-stack
+                            JavaScript developer. Join our Program by clicking
+                            below!
+                          </p>
+                          <a href="#" class="btn btn-warning">Join Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="card">
+                        <img
+                          src="./images/Courses/css course.png"
+                          class="card-img-top"
+                          alt="Css Course"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">CSS Full Course</h5>
+                          <p class="card-text">
+                            This full course on CSS will give you a complete
+                            understanding of CSS. Join our Program by clicking
+                            below!
+                          </p>
+                          <a href="#" class="btn btn-warning">Join Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <div class="card">
+                        <img
+                          src="./images/Courses/mern.jpg"
+                          class="card-img-top"
+                          alt="Mern stack course"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">MERN Stack Course</h5>
+                          <p class="card-text">
+                            Are you looking to become an expert in the MERN
+                            stack? Join our exclusive MERN Stack Course and get
+                            the skills and knowledge you need to become a web
+                            development champion.
+                          </p>
+                          <a href="#" class="btn btn-warning">Join Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-body-tertiary text-center mt-5">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong
+                    >A front-end web development newsletter that sparks
+                    joy</strong
+                  >
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div data-mdb-input-init class="form-outline mb-4">
+                  <input
+                    type="email"
+                    id="form5Example26"
+                    class="form-control"
+                    placeholder="Your Email Address"
+                  />
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  data-mdb-ripple-init
+                  type="submit"
+                  class="btn btn-warning mb-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        &copy; 2023 Copyright:
+        <a class="text-body" href="#">TechiSpot</a>
+      </div>
+      <!-- Copyright -->
+      <a href="#top" class="btn btn-floating"
+        ><img src="./images/top-arrow.svg" width="25"
+      /></a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

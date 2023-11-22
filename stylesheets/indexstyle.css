@@ -4,10 +4,17 @@
 }
 #home-cover {
  text-align: center;
+ background-image: url(../images/home\ cover.jpg);
+ background-repeat: no-repeat;
 }
-.home-heading {
+/* .home-heading {
  text-align: center;
- font-family: Arial, Helvetica, sans-serif;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+/* #course-height {
+ height: 500px;
+} */
+#course-bg-img {
+ background-image: url(/images/Courses/course-bg-img.jpg);
+ background-repeat: no-repeat;
 }
-
-

@@ -15,6 +15,6 @@
  height: 500px;
 } */
 #course-bg-img {
- background-image: url(/images/Courses/course-bg-img.jpg);
+ background-image: url(../images/Courses/course-bg-img.jpg);
  background-repeat: no-repeat;
 }

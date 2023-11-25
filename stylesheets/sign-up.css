@@ -1,0 +1,14 @@
+.signup-bg {
+ background-image: url(../images/sign-up/signupbg.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.cs-shadow {
+ box-shadow:
+   2.6px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+   6.3px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+   11.8px 12.5px 10px rgba(0, 0, 0, 0.035),
+   21px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+   39.3px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+   94px 100px 80px rgba(0, 0, 0, 0.07);
+}

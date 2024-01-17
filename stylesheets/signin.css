@@ -33,6 +33,7 @@ body {
 }
 
 .form-signin .checkbox {
+  margin-top: 10px;
   font-weight: 400;
 }
 
@@ -47,7 +48,16 @@ body {
 }
 
 .form-signin input[type="password"] {
-  margin-bottom: 10px;
+  
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.error {
+  text-align: left;
+  color: red;
+  font-size: small;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
 }

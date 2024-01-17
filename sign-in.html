@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="./stylesheets/signin.css" />
     <link rel="stylesheet" href="./stylesheets/indexstyle.css" />
+    <script
+      src="https://kit.fontawesome.com/21f85c3510.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -83,7 +87,7 @@
     </header>
     <div class="text-center mt-5 form-bg form-container">
       <main class="form-signin">
-        <form>
+        <form id="sign-in-form" action="#">
           <img
             class="mb-4"
             src="./images/sign-in.svg"
@@ -99,21 +103,22 @@
             <input
               type="email"
               class="form-control"
-              id="floatingInput"
+              id="email-input"
               placeholder="name@example.com"
             />
-            <label for="floatingInput">Email address</label>
+            <label for="email-input">Email address</label>
           </div>
+          <div id="email-error" class="error">Please enter a valid email</div>
           <div class="form-floating">
             <input
               type="password"
               class="form-control"
-              id="floatingPassword"
+              id="password-input"
               placeholder="Password"
             />
-            <label for="floatingPassword">Password</label>
+            <label for="password-input">Password</label>
           </div>
-
+          <div id="pass-error" class="error">Your Password is incorrect</div>
           <div class="checkbox mb-3">
             <label>
               <input type="checkbox" value="remember-me" /> Remember me
@@ -210,5 +215,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

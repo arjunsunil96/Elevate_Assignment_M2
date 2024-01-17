@@ -12,6 +12,10 @@
     />
     <link rel="stylesheet" href="./stylesheets/sign-up.css" />
     <link rel="stylesheet" href="./stylesheets/indexstyle.css" />
+    <script
+      src="https://kit.fontawesome.com/21f85c3510.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -82,50 +86,65 @@
                 <h2 class="text-uppercase text-center mb-5">
                   Create an account
                 </h2>
-
-                <form>
-                  <div class="form-outline mb-4">
+                <form id="sign-up-form" action="#">
+                  <div class="form-outline mb-4 input-icon">
                     <input
                       type="text"
-                      id="form3Example1cg"
+                      id="full-name"
                       class="form-control form-control-lg"
                     />
-                    <label class="form-label" for="form3Example1cg"
-                      >Your Name</label
-                    >
+                    <label class="form-label" for="full-name">Full Name</label>
+                    <span id="name-error" class="errors"></span
+                    ><span id="full-name-success" class="success-icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
                   </div>
 
                   <div class="form-outline mb-4">
                     <input
                       type="email"
-                      id="form3Example3cg"
+                      id="email-signup"
                       class="form-control form-control-lg"
                     />
-                    <label class="form-label" for="form3Example3cg"
-                      >Your Email</label
-                    >
+                    <label class="form-label" for="email-signup">Email</label>
+                    <span id="email-error" class="errors"></span
+                    ><span id="email-success" class="success-icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
                   </div>
 
                   <div class="form-outline mb-4">
                     <input
                       type="password"
-                      id="form3Example4cg"
+                      id="password-signup"
                       class="form-control form-control-lg"
                     />
-                    <label class="form-label" for="form3Example4cg"
-                      >Password</label
+
+                    <label class="form-label" for="password-signup"
+                      >Password (min. 12 characters)</label
                     >
+                    <span id="pass-error" class="errors"></span
+                    ><span id="pass-success" class="success-icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
+                    <div id="pass-div">
+                      <div id="pass-strength" class="pass-indicator"></div>
+                    </div>
                   </div>
 
                   <div class="form-outline mb-4">
                     <input
                       type="password"
-                      id="form3Example4cdg"
+                      id="confirm-pass"
                       class="form-control form-control-lg"
                     />
-                    <label class="form-label" for="form3Example4cdg"
+                    <label class="form-label" for="confirm-pass"
                       >Repeat your password</label
                     >
+                    <span id="confirm-pass-error" class="errors"></span
+                    ><span id="confirm-success" class="success-icon"
+                      ><i class="fa-solid fa-circle-check"></i
+                    ></span>
                   </div>
 
                   <div class="form-check d-flex justify-content-center mb-5">
@@ -133,17 +152,18 @@
                       class="form-check-input me-2"
                       type="checkbox"
                       value=""
-                      id="form2Example3cg"
+                      id="terms-check"
                     />
-                    <label class="form-check-label" for="form2Example3g">
+                    <label class="form-check-label" for="terms-check">
                       I agree all statements in
                       <a href="#!" class="text-body"><u>Terms of service</u></a>
                     </label>
+                    <span id="terms-error" class="errors"> </span>
                   </div>
 
                   <div class="d-flex justify-content-center">
                     <button
-                      type="button"
+                      type="submit"
                       class="btn btn-success btn-block btn-lg gradient-custom-4 text-light text-body"
                     >
                       Register
@@ -239,5 +259,6 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="signupvalidation.js"></script>
   </body>
 </html>
